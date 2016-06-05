@@ -1,0 +1,31 @@
+{
+  "name": "css-functions",
+  "version": "0.1.0",
+  "description": "JS functions to build CSS functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsstyles/css-functions.git"
+  },
+  "keywords": [
+    "css",
+    "functions",
+    "jss",
+    "css",
+    "in",
+    "js",
+    "jsstyles"
+  ],
+  "author": {
+    "name": "Oleg Slobodskoi",
+    "email": "oleg008@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsstyles/css-functions/issues"
+  },
+  "homepage": "https://github.com/jsstyles/css-functions#readme"
+}
