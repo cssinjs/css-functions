@@ -2,13 +2,19 @@
   "name": "css-functions",
   "version": "0.1.0",
   "description": "JS functions to build CSS functions",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "npm run test"
+    "babel": "babel -d lib modules",
+    "lint": "eslint modules",
+    "precommit": "npm run lint && npm test",
+    "prepare": "npm run precommit && npm run babel",
+    "release": "npm run prepare && npm publish",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts test/_setup/mocha.opts",
+    "test": "mocha --opts test/_setup/mocha.opts"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jsstyles/css-functions.git"
+    "url": "git+ssh://git@github.com/cssinjs/css-functions.git"
   },
   "keywords": [
     "css",
@@ -17,15 +23,50 @@
     "css",
     "in",
     "js",
-    "jsstyles"
+    "jsstyles",
+    "cssinjs"
   ],
-  "author": {
-    "name": "Oleg Slobodskoi",
-    "email": "oleg008@gmail.com"
-  },
+  "author": [
+    {
+      "name": "Oleg Slobodskoi",
+      "email": "oleg008@gmail.com"
+    },
+    {
+      "name": "Robin Frischmann",
+      "email": "robin@rofrischmann.de"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jsstyles/css-functions/issues"
+    "url": "https://github.com/cssinjs/css-functions/issues"
   },
-  "homepage": "https://github.com/jsstyles/css-functions#readme"
+  "homepage": "https://github.com/cssinjs/css-functions",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.6.0",
+    "babel-core": "^6.6.0",
+    "babel-eslint": "^5.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "codeclimate-test-reporter": "^0.3.1",
+    "cross-env": "^1.0.8",
+    "esformatter": "^0.9.0",
+    "esformatter-braces": "^1.2.1",
+    "esformatter-collapse-objects": "^0.5.1",
+    "esformatter-dot-notation": "^1.3.1",
+    "esformatter-jsx": "^4.1.2",
+    "esformatter-literal-notation": "^1.0.1",
+    "esformatter-parseint": "^1.0.3",
+    "esformatter-quote-props": "^1.0.2",
+    "esformatter-quotes": "^1.0.3",
+    "esformatter-remove-trailing-commas": "^1.0.1",
+    "esformatter-spaced-lined-comment": "^2.0.1",
+    "esformatter-var-each": "^2.1.0",
+    "eslint": "^2.10.2",
+    "eslint-config-rackt": "^1.1.1",
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^2.4.5"
+  }
 }
