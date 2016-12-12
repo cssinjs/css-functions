@@ -1,3 +1,3 @@
 export default function rotateY(y) {
-  return 'rotateY(' + y + ')'
+  return 'rotateY(' + y + 'deg)'
 }
