@@ -1,3 +1,3 @@
 export default function isObject(obj) {
-  return obj instanceof Object && !Array.isArray(obj)
+  return typeof obj === 'object' && !Array.isArray(obj)
 }

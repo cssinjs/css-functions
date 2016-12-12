@@ -1,3 +1,5 @@
+import applyUnitToNumber from '../utils/applyUnitToNumber'
+
 export default function rotateZ(z) {
-  return 'rotateZ(' + z + 'deg)'
+  return 'rotateZ(' + applyUnitToNumber(z, 'deg') + ')'
 }

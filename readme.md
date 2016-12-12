@@ -1,8 +1,9 @@
 ## JavaScript functions to build CSS functions
 
 This package ships functions that return the equivalent CSS function syntax.
+There will be automatic value validation in non-production mode soon.
 
-## API
+## Functions
 Right now we ship 25 functions.<br>
 
 * `hsl(h, s, l)`
@@ -36,7 +37,7 @@ All parameters can always be passed as a single objects as well.<br>
 The keys always match the parameter name e.g. `rotate3d({ x, y, z })` except for the following color functions:
 
 * `hsl({ hue, saturation, lightness })`
-* `hsla({ hue, saturation, alpha })`
+* `hsla({ hue, saturation, lightness, alpha })`
 * `rgb({ red, green, blue })`
 * `rgba({ red, green, blue, alpha })`
 
@@ -69,10 +70,30 @@ It safely combines both returned strings separated by a whitespace.
 ```javascript
 import { translateX, scale, rotateX, multiple } from 'css-functions'
 
-// => 'translateX('10%') scale(0.5, 0.5) rotateX(180deg)'
+// => 'translateX(10px) translateY(5%) scale(0.5, 0.5) rotateX(180deg)'
 const combined = multiple(
-  translateX('10%'),
+  translateX(10),
+  translateY('5%'),
   scale(0.5, 0.5),
   rotateX(180)
 )
 ```
+
+## Units
+As the above example shows, we add default units to some numbers.
+#### px
+* `translate`
+* `translate3d`
+* `translateX`
+* `translateY`
+* `translateZ`
+
+#### deg
+* `rotate`
+* `rotate3d`
+* `rotateX`
+* `rotateY`
+* `rotateZ`
+* `skew`
+* `skewX`
+* `skewY`

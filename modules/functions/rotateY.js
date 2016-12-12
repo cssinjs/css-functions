@@ -1,3 +1,5 @@
+import applyUnitToNumber from '../utils/applyUnitToNumber'
+
 export default function rotateY(y) {
-  return 'rotateY(' + y + 'deg)'
+  return 'rotateY(' + applyUnitToNumber(y, 'deg') + ')'
 }
