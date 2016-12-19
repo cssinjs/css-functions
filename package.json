@@ -1,8 +1,14 @@
 {
   "name": "css-functions",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "JavaScript functions to build CSS functions",
   "main": "lib/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "/lib",
+    "/dist"
+  ],
   "scripts": {
     "babel": "babel -d lib modules",
     "lint": "eslint modules",
