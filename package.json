@@ -1,6 +1,6 @@
 {
   "name": "css-functions",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JavaScript functions to build CSS functions",
   "main": "lib/index.js",
   "files": [
