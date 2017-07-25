@@ -1,7 +1,5 @@
-import isObject from '../utils/isObject'
-import applyUnitToNumbers from '../utils/applyUnitToNumbers'
+import applyUnitToNumber from '../utils/applyUnitToNumber'
 
-export default function rotate(x, y) {
-  const values = isObject(x) ? [ x.x, x.y ] : [ x, y ]
-  return 'rotate(' + applyUnitToNumbers(values, 'deg').join(',') + ')'
+export default function rotate(x) {
+  return 'rotate(' + applyUnitToNumber(x, 'deg') + ')'
 }
