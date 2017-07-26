@@ -4,7 +4,7 @@ This package ships functions that return the equivalent CSS function syntax.
 There will be automatic value validation in non-production mode soon.
 
 ## Functions
-Right now we ship 25 functions.<br>
+Right now we ship 26 functions.<br>
 
 * `hsl(h, s, l)`
 * `hsla(h, s, l, a)`
@@ -31,6 +31,7 @@ Right now we ship 25 functions.<br>
 * `translateX(x)`
 * `translateY(y)`
 * `translateZ(z)`
+* `linearGradient(x, y /*, z,...*/)`
 
 ### Parameter object notation
 All parameters can always be passed as a single objects as well.<br>

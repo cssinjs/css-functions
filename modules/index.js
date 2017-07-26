@@ -23,5 +23,6 @@ export translate3d from './functions/translate3d'
 export translateX from './functions/translateX'
 export translateY from './functions/translateY'
 export translateZ from './functions/translateZ'
+export linearGradient from './functions/linearGradient'
 
 export multiple from './multiple'
