@@ -1,5 +1,6 @@
 export hsl from './functions/hsl'
 export hsla from './functions/hsla'
+export { linearGradient, repeatingLinearGradient } from './function/linearGradients'
 export matrix from './functions/matrix'
 export matrix3d from './functions/matrix3d'
 export perspective from './functions/perspective'
