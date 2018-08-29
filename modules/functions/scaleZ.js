@@ -1,3 +1,3 @@
-export default function scaleZ(z) {
-  return 'scaleZ(' + z + ')'
-}
+import simpleFunctionFactory from 'utils/simpleFunctionFactory'
+
+export default simpleFunctionFactory('scaleZ')

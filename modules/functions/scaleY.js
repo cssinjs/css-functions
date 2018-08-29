@@ -1,3 +1,3 @@
-export default function scaleY(y) {
-  return 'scaleY(' + y + ')'
-}
+import simpleFunctionFactory from 'utils/simpleFunctionFactory'
+
+export default simpleFunctionFactory('scaleY')

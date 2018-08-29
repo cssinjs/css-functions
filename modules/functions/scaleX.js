@@ -1,3 +1,3 @@
-export default function scaleX(x) {
-  return 'scaleX(' + x + ')'
-}
+import simpleFunctionFactory from 'utils/simpleFunctionFactory'
+
+export default simpleFunctionFactory('scaleX')
