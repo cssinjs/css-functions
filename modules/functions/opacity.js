@@ -1,3 +1,3 @@
-import simpleFunctionFactory from 'utils/simpleFunctionFactory'
+import simpleFunctionFactory from '../utils/simpleFunctionFactory'
 
 export default simpleFunctionFactory('opacity')
