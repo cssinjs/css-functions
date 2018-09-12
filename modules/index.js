@@ -1,5 +1,5 @@
 export blur from './functions/blur'
-export brightnes from './functions/brightnes'
+export brightness from './functions/brightness'
 export hsl from './functions/hsl'
 export hsla from './functions/hsla'
 export matrix from './functions/matrix'
