@@ -1,7 +1,9 @@
 import isObject from '../utils/isObject'
-import applyUnitToNumbers from '../utils/applyUnitToNumbers'
+import applyUnitToNumber from '../utils/applyUnitToNumber'
 
-export default function rotate3d(x, y, z) {
+export default function rotate3d(x, y, z, a) {
   const values = isObject(x) ? [ x.x, x.y, x.z ] : [ x, y, z ]
-  return 'rotate3d(' + applyUnitToNumbers(values, 'deg').join(',') + ')'
+  const angle = a || x.a
+
+  return `rotate3d(${values.join(',')},${applyUnitToNumber(angle, 'deg')})`
 }
