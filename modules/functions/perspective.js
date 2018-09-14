@@ -1,3 +1,3 @@
-export default function perspective(p) {
-  return 'perspective(' + p + ')'
-}
+import simpleFunctionFactory from '../utils/simpleFunctionFactory'
+
+export default simpleFunctionFactory('perspective')

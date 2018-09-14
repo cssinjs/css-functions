@@ -4,12 +4,20 @@ This package ships functions that return the equivalent CSS function syntax.
 There will be automatic value validation in non-production mode soon.
 
 ## Functions
-Right now we ship 25 functions.<br>
+Right now we ship 35 functions.<br>
 
+* `blur(v)`
+* `brightness(v)`
+* `contrast(v)`
+* `dropShadow(offsetX, offsetY, blurRadius, spreadRadius, color)`
+* `grayscale(v)`
 * `hsl(h, s, l)`
 * `hsla(h, s, l, a)`
+* `hueRotate(v)`
+* `invert(v)`
 * `matrix(a, b, c, d, x, y)`
 * `matrix3d(a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, a4, b4, c4, d4)`
+* `opacity(v)`
 * `perspective(p)`
 * `rgb(r, g, b)`
 * `rgba(r, g, b, a)`
@@ -18,11 +26,13 @@ Right now we ship 25 functions.<br>
 * `rotateX(x)`
 * `rotateY(y)`
 * `rotateZ(z)`
+* `saturate(v)`
 * `scale(x, y)`
 * `scale3d(x, y, z)`
 * `scaleX(x)`
 * `scaleY(y)`
 * `scaleZ(z)`
+* `sepia(z)`
 * `skew(x, y)`
 * `skewX(x)`
 * `skewY(y)`
@@ -82,6 +92,8 @@ const combined = multiple(
 ## Units
 As the above example shows, we add default units to some numbers.
 #### px
+* `blur`
+* `dropShadow`
 * `translate`
 * `translate3d`
 * `translateX`
@@ -89,6 +101,7 @@ As the above example shows, we add default units to some numbers.
 * `translateZ`
 
 #### deg
+* `hueRotate`
 * `rotate`
 * `rotate3d`
 * `rotateX`
